@@ -1,4 +1,4 @@
-create table public.books
+create table books
 (
     id      serial primary key,
     title   varchar(30) not null,
@@ -8,9 +8,9 @@ create table public.books
 
 commit;
 
-insert into public.books (title,author, date_added)
+insert into books (title,author, date_added)
 values ('Недоросль', 'Д. И. Фонвизин', now());
-insert into public.books (title,author, date_added)
+insert into books (title,author, date_added)
 values ('Недорось', 'Д. И. Фнвизин', now() - interval '24h');
 
-select * from public.books
+select * from books
